@@ -23,7 +23,33 @@ namespace Unit_converter
                 {"Mm", 1e6 },
                 {"Gm", 1e9 }
             };
-            public Form1()
+
+            Dictionary<string, double> areas = new Dictionary<string, double>()
+            {
+                {"nm² ", 1e-18 },
+                {"μm² ", 1e-12 },
+                {"mm² ", 1e-6 },
+                {"mm² ", 1e-6 },
+                {"cm² ", 1e-4 },
+                {"m² ", 1 },
+                {"km² ", 1e6 },
+                {"Mm² ", 1e12 },
+                {"Gm² ", 1e18 }
+            };
+
+            Dictionary<string, double> volumes = new Dictionary<string, double>()
+            {
+                {"nm³ ", 1e-36 },
+                {"μm³ ", 1e-24 },
+                {"mm³ ", 1e-12 },
+                {"mm³ ", 1e-12 },
+                {"cm³ ", 1e-8 },
+                {"m³ ", 2 },
+                {"km³ ", 1e12 },
+                {"Mm³ ", 1e24 },
+                {"Gm³ ", 1e36 }
+            };
+        public Form1()
             {
                 InitializeComponent();
                 foreach (string k in prefixes.Keys)
